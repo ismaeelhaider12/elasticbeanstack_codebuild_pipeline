@@ -7,15 +7,17 @@ phases:
       nodejs: 12
   pre_build:
     commands:
-      - echo Installing source NPM dependencies...
-      - npm install
+      - echo install requirement in pre_build  sections ...
   build:
     commands:
-      - echo Build started on `date`
+      - echo Build started on `date` 
+      - echo Installing source NPM dependencies...
+      - npm install
       - echo Compiling the app.js code in build stage
   post_build:
     commands:
       - echo Build completed on `date`
+      - echo Build Done by Muhammad Ismaeel Haider
 # Include only the files required for your application to run.
 artifacts:
   files:
